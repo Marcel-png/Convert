@@ -97,7 +97,7 @@ const CurrencyConverter = () => {
         >
           Convertir
         </button>
-        {result && <div className="mt-6 font-bold text-lg text-gray-800 text-center animate-pulse">{result}</div>}
+        {result && <div className="mt-6 font-bold text-lg text-gray-800 text-center">{result}</div>}
       </div>
     </div>
   );
