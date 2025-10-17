@@ -93,7 +93,7 @@ const CurrencyConverter = () => {
         </div>
         <button
           onClick={convertCurrency}
-          className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 transform hover:scale-105"
+          className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 transform hover:scale-105"
         >
           Convertir
         </button>
