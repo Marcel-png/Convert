@@ -32,4 +32,268 @@ code {
   background-size: 800% 800%;
   animation: gradient 15s ease infinite;
 }
+.cc-page {
+  min-height: 100vh;
+  background: #f5f4f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
 
+.cc-container {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Header */
+.cc-header {
+  margin-bottom: 1.5rem;
+}
+
+.cc-subtitle {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 4px;
+}
+
+.cc-title {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+/* Card */
+.cc-card {
+  background: #fff;
+  border: 1px solid #e8e8e4;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Field */
+.cc-field {
+  margin-bottom: 1.25rem;
+}
+
+.cc-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+/* Amount input */
+.cc-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cc-input-symbol {
+  position: absolute;
+  left: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #aaa;
+  pointer-events: none;
+}
+
+.cc-amount-input {
+  padding-left: 36px;
+  padding-right: 14px;
+  font-size: 20px;
+  font-weight: 500;
+  height: 52px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0dfd9;
+  border-radius: 8px;
+  outline: none;
+  background: #fafaf8;
+  color: #1a1a1a;
+  transition: border-color 0.15s;
+}
+
+.cc-amount-input:focus {
+  border-color: #1a1a1a;
+}
+
+/* Select row */
+.cc-select-row {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  gap: 8px;
+  align-items: end;
+  margin-bottom: 1.25rem;
+}
+
+.cc-select {
+  width: 100%;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #e0dfd9;
+  border-radius: 8px;
+  padding: 0 10px;
+  background: #fafaf8;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.cc-select:focus {
+  outline: none;
+  border-color: #1a1a1a;
+}
+
+/* Swap button */
+.cc-swap-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #e0dfd9;
+  background: #fafaf8;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #555;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.cc-swap-btn:hover {
+  background: #f0efe9;
+  border-color: #ccc;
+}
+
+/* Convert button */
+.cc-convert-btn {
+  width: 100%;
+  height: 48px;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s, background 0.15s;
+}
+
+.cc-convert-btn:hover {
+  background: #333;
+}
+
+.cc-convert-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error */
+.cc-error {
+  font-size: 13px;
+  color: #c0392b;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+/* Result card */
+.cc-result-card {
+  background: #f5f4f0;
+  border: 1px solid #e8e8e4;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.cc-result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cc-result-from {
+  font-size: 12px;
+  color: #999;
+  margin: 0 0 4px;
+}
+
+.cc-result-value {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.cc-result-to-name {
+  font-size: 13px;
+  color: #888;
+  margin: 4px 0 0;
+}
+
+.cc-rate-label {
+  font-size: 12px;
+  color: #999;
+  margin: 0 0 4px;
+  text-align: right;
+}
+
+.cc-rate-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0;
+  text-align: right;
+}
+
+/* Popular pairs */
+.cc-popular-section {
+  margin-top: 0.5rem;
+}
+
+.cc-popular-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 10px;
+}
+
+.cc-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cc-pill {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #e0dfd9;
+  background: #fff;
+  cursor: pointer;
+  color: #444;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.cc-pill:hover {
+  background: #f0efe9;
+  border-color: #ccc;
+}
